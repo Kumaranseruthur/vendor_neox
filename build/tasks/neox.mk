@@ -23,17 +23,6 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 neox: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(NEOX_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(NEOX_TARGET_PACKAGE) > $(NEOX_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_CYN}""${CL_CYN}
-        @echo -e ${CL_CYN}"     ███▄    █ ▓█████  ▒█████  ▒██   ██▒  "${CL_CYN}
-        @echo -e ${CL_CYN}"     ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▒▒ █ █ ▒░  "${CL_CYN}
-        @echo -e ${CL_CYN}"    ▓██  ▀█ ██▒▒███   ▒██░  ██▒░░  █   ░  "${CL_CYN}
-        @echo -e ${CL_CYN}"    ▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░ ░ █ █ ▒   "${CL_CYN}
-        @echo -e ${CL_CYN}"    ▒██░   ▓██░░▒████▒░ ████▓▒░▒██▒ ▒██▒  "${CL_CYN}
-        @echo -e ${CL_CYN}"    ░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░ ▒▒ ░ ░▓ ░  "${CL_CYN}
-        @echo -e ${CL_CYN}"    ░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░ ░░   ░▒ ░  "${CL_CYN}
-        @echo -e ${CL_CYN}"       ░   ░ ░    ░   ░ ░ ░ ▒   ░    ░    "${CL_CYN}
-        @echo -e ${CL_CYN}"        ░    ░  ░    ░ ░   ░    ░         "${CL_CYN}
-	@echo -e ${CL_CYN}""${CL_CYN}
 	@echo -e ${CL_CYN}"===================================================-Package complete-===================================================="${CL_RST}
 	@echo -e ${CL_CYN}"File   : "${CL_MAG} $(PRODUCT_OUT)/$(NEOX_VERSION).zip${CL_RST}
 	@echo -e ${CL_CYN}"MD5    : "${CL_MAG}" `cat $(NEOX_TARGET_PACKAGE).md5sum | cut -d ' ' -f 1`"${CL_RST}
