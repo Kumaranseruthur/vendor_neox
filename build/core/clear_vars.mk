@@ -1,4 +1,4 @@
 #
-# Lineage-specific variable clears
+# NeoxROM-specific variable clears
 #
 LOCAL_IGNORE_SUBDIR :=
